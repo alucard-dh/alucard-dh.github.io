@@ -64,7 +64,9 @@
 <meta property="og:description" content="&amp;emsp;&amp;emsp;在hexo搭建完成后，使用next主题，发现有些字体过大，比如标题下面提示文章发表时间、分类、标签等字体。以下提出我的修改方式（版本hexo：3.9.0、next：7.4.1）。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/10/08/hexo-Next主题-修改文字大小/1.png">
-<meta property="og:updated_time" content="2019-10-08T03:20:49.844Z">
+<meta property="og:image" content="http://yoursite.com/2019/10/08/hexo-Next主题-修改文字大小/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/08/hexo-Next主题-修改文字大小/3.png">
+<meta property="og:updated_time" content="2019-10-08T03:30:57.733Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo(Next主题)修改文字大小">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;在hexo搭建完成后，使用next主题，发现有些字体过大，比如标题下面提示文章发表时间、分类、标签等字体。以下提出我的修改方式（版本hexo：3.9.0、next：7.4.1）。">
@@ -305,7 +307,7 @@
                 
               
 
-              <time title="创建时间：2019-10-08 11:00:25 / 修改时间：11:20:49" itemprop="dateCreated datePublished" datetime="2019-10-08T11:00:25+08:00">2019-10-08</time>
+              <time title="创建时间：2019-10-08 11:00:25 / 修改时间：11:30:57" itemprop="dateCreated datePublished" datetime="2019-10-08T11:00:25+08:00">2019-10-08</time>
             </span>
           
             
@@ -343,7 +345,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>1.8k</span>
+              <span>2k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -375,7 +377,11 @@
 <p>&emsp;&emsp;可以看出只有全局、题目、多级标题、文章、代码的字体设置，并没有细致到我们需要的位置，于是我思考一定有一个地方设置了多种不同情况下所用到字体的大小。通过各方面的搜索，发现在<code>themes\next\source\css\_variables</code>下的<code>base.styl</code>中有这么一块：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// Font size</span><br><span class="line">$font-size-base           = 1em;</span><br><span class="line">$font-size-base           = unit(hexo-config(&apos;font.global.size&apos;), em) if hexo-config(&apos;font.global.size&apos;) is a &apos;unit&apos;;</span><br><span class="line">$font-size-smallest       = .75em;</span><br><span class="line">$font-size-smaller        = .8125em;</span><br><span class="line">$font-size-small          = .875em;</span><br><span class="line">$font-size-medium         = 1em;</span><br><span class="line">$font-size-large          = 1.125em;</span><br><span class="line">$font-size-larger         = 1.25em;</span><br><span class="line">$font-size-largest        = 1.375em;</span><br></pre></td></tr></table></figure>
 
-<p>看到了和我猜想一样的设置了不同情况下的字体的大小，其中<code>font-size-smallest</code>控制的就是</p>
+<p>看到了和我猜想一样的设置了不同情况下的字体的大小，其中<code>font-size-smallest</code>控制的就是红框中的字体大小，我进行了如下修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$font-size-smallest       = .65em;</span><br><span class="line">$font-size-smaller        = .75em;</span><br><span class="line">$font-size-small          = .8em;</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;结果如下：<br><img src="/2019/10/08/hexo-Next主题-修改文字大小/2.png" alt></p>
+<p>&emsp;&emsp;在页尾处的字体大小由<code>$font-size-small</code>控制，修改后结果如下：<br><img src="/2019/10/08/hexo-Next主题-修改文字大小/3.png" alt></p>
 
     </div>
 
