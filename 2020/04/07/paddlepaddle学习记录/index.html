@@ -55,21 +55,22 @@
   };
 </script>
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;假期在家想好好看看PRML《模式识别与机器学习》这本书，看到github上有python的源码，又因为家里的电脑不想安装python了。突然想到收藏夹里还有colab这个东西，就打算在这上面运行运行试试。">
-<meta name="keywords" content="Colab,PRML">
+  <meta name="description" content="&amp;emsp;&amp;emsp;因为百度可以白嫖GPU，在家小笔记根本不敢折腾，所以学习一下paddle的这个操作。">
+<meta name="keywords" content="paddlepaddle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="colab下配置并运行PRML源代码">
-<meta property="og:url" content="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/index.html">
+<meta property="og:title" content="paddlepaddle学习记录">
+<meta property="og:url" content="http://yoursite.com/2020/04/07/paddlepaddle学习记录/index.html">
 <meta property="og:site_name" content="LAS">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;假期在家想好好看看PRML《模式识别与机器学习》这本书，看到github上有python的源码，又因为家里的电脑不想安装python了。突然想到收藏夹里还有colab这个东西，就打算在这上面运行运行试试。">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;因为百度可以白嫖GPU，在家小笔记根本不敢折腾，所以学习一下paddle的这个操作。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/1.png">
-<meta property="og:updated_time" content="2020-02-12T12:34:09.714Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190417204918338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01vcGhpc3RvbGl1,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190417204949179.png">
+<meta property="og:updated_time" content="2020-04-07T02:12:02.337Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="colab下配置并运行PRML源代码">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;假期在家想好好看看PRML《模式识别与机器学习》这本书，看到github上有python的源码，又因为家里的电脑不想安装python了。突然想到收藏夹里还有colab这个东西，就打算在这上面运行运行试试。">
-<meta name="twitter:image" content="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/1.png">
-  <link rel="canonical" href="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/">
+<meta name="twitter:title" content="paddlepaddle学习记录">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;因为百度可以白嫖GPU，在家小笔记根本不敢折腾，所以学习一下paddle的这个操作。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190417204918338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01vcGhpc3RvbGl1,size_16,color_FFFFFF,t_70">
+  <link rel="canonical" href="http://yoursite.com/2020/04/07/paddlepaddle学习记录/">
 
 
 <script id="page-configurations">
@@ -83,7 +84,7 @@
   };
 </script>
 
-  <title>colab下配置并运行PRML源代码 | LAS</title>
+  <title>paddlepaddle学习记录 | LAS</title>
   
 
 
@@ -277,7 +278,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/07/paddlepaddle学习记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Alucard_dh">
@@ -289,7 +290,7 @@
       <meta itemprop="name" content="LAS">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">colab下配置并运行PRML源代码
+        <h1 class="post-title" itemprop="name headline">paddlepaddle学习记录
 
           
         </h1>
@@ -305,7 +306,7 @@
                 
               
 
-              <time title="创建时间：2020-02-12 19:29:50 / 修改时间：20:34:09" itemprop="dateCreated datePublished" datetime="2020-02-12T19:29:50+08:00">2020-02-12</time>
+              <time title="创建时间：2020-04-07 10:08:35 / 修改时间：10:12:02" itemprop="dateCreated datePublished" datetime="2020-04-07T10:08:35+08:00">2020-04-07</time>
             </span>
           
             
@@ -343,7 +344,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>819</span>
+              <span>2.4k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -353,7 +354,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>1 分钟</span>
+              <span>4 分钟</span>
             </span>
           
 
@@ -366,17 +367,32 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>&emsp;&emsp;假期在家想好好看看PRML《模式识别与机器学习》这本书，看到github上有python的源码，又因为家里的电脑不想安装python了。突然想到收藏夹里还有colab这个东西，就打算在这上面运行运行试试。</p>
+        <p>&emsp;&emsp;因为百度可以白嫖GPU，在家小笔记根本不敢折腾，所以学习一下paddle的这个操作。</p>
 <a id="more"></a>
-<p>&emsp;&emsp;Colab的介绍与使用百度就好了，我这里倒是大材小用了。PRML源码的github网址：<a href="https://github.com/ctgk/PRML" target="_blank" rel="noopener">https://github.com/ctgk/PRML</a><br>&emsp;&emsp;首先进入colab，随便打开一个文本输入以下代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%<span class="built_in">cd</span> /content/sample_data</span><br><span class="line">!git <span class="built_in">clone</span> https://github.com/ctgk/PRML.git</span><br></pre></td></tr></table></figure>
+<h1 id="paddle学习记录"><a href="#paddle学习记录" class="headerlink" title="paddle学习记录"></a>paddle学习记录</h1><h2 id="模型的保存与加载"><a href="#模型的保存与加载" class="headerlink" title="模型的保存与加载"></a>模型的保存与加载</h2><p>Paddle提供两种方式的保存和加载模型：<br>1.保存整个模型<br>2.只保存模型参数  </p>
+<h3 id="整个模型的保存与加载"><a href="#整个模型的保存与加载" class="headerlink" title="整个模型的保存与加载"></a>整个模型的保存与加载</h3><p>保存模型使用fluid.io.save_inference_model这个API，参数为：保存路径，输入的Variable名， 需要获取的Variable以及Executor。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 保存参数</span></span><br><span class="line">save_dirname = <span class="string">"./mnist_model"</span></span><br><span class="line">fluid.io.save_inference_model(save_dirname, [<span class="string">"img"</span>], [predict], exe, model_filename=<span class="literal">None</span>, params_filename=<span class="literal">None</span>)</span><br></pre></td></tr></table></figure>
 
-<p>&emsp;&emsp;如下图所示：<br><img src="/2020/02/12/colab下配置并运行PRML源代码/1.png" alt><br>&emsp;&emsp;继续运行以下代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%<span class="built_in">cd</span> /content/sample_data/PRML/</span><br><span class="line">!python setup.py install</span><br></pre></td></tr></table></figure>
+<p>加载模型这块比较简单，定义一个Executor，然后使用load_inference_model加载模型，获取program, feed_target_names, fetch_targets, 这三个变量，用于后续的使用。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exe = fluid.Executor(fluid.CPUPlace())</span><br><span class="line">path = <span class="string">"./mnist_model"</span></span><br><span class="line">inference_program, feed_target_names, fetch_targets = fluid.io.load_inference_model(dirname=path, executor=exe)</span><br></pre></td></tr></table></figure>
 
-<p>&emsp;&emsp;结果太长了我就不列下来了，这时候基本上prml所需要的包都安装完毕了，这时候你就可以把源码复制进来运行了。这时候我发现了Colab一个奇怪的地方，他好像是每个代码文件对应一个储存空间，换言之对应一个运行环境。就比如我在这个文本配置的prml环境，只能在这个文本里使用，我如果再打开一个别的文件，就发现并没有安装prml。<br> &emsp;&emsp;如果出现了<code>ImportError: cannot import name &#39;logsumexp&#39;</code>这种报错的话，是你的scipy的版本太高了，降版本到1.2.1就好了。代码如下：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!pip install scipy==1.2.1</span><br></pre></td></tr></table></figure></p>
-<p> &emsp;&emsp;重启一下代码执行程序就好了。  </p>
-<p>&emsp;&emsp;其实这样搞也一般般，需要一个代码段一个代码段复制粘贴，不过还好是学习用，这种分段式的方法也挺好的，反正我是不想在家里这个半老爷机装python了。</p>
+<h3 id="参数的保存与加载"><a href="#参数的保存与加载" class="headerlink" title="参数的保存与加载"></a>参数的保存与加载</h3><p>第二种方式是只保存模型参数, 只需要指定Executor和参数保存路径即可。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">param_path = <span class="string">"./my_paddle_model"</span></span><br><span class="line">prog = fluid.default_main_program()</span><br><span class="line">fluid.io.save_params(executor=exe, dirname=param_path, main_program=<span class="literal">None</span>)</span><br></pre></td></tr></table></figure>
+
+<p>通过参数保存方式，在后续的加载中相对会复杂一些。第一步先构造program和executor, 在默认环境下，构造模型结构。然后通过load_parameters方式来把参数加载到executor中。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用加载参数的方式加载</span></span><br><span class="line">exe = fluid.Executor(fluid.CPUPlace())</span><br><span class="line">param_path = <span class="string">"./my_paddle_model"</span></span><br><span class="line">inference_program = fluid.default_main_program()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义LetNet网络结构</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">LeNet</span><span class="params">()</span>:</span></span><br><span class="line">    img = fluid.layers.data(name=<span class="string">'img'</span>, shape=[<span class="number">1</span>, <span class="number">28</span>, <span class="number">28</span>], dtype=<span class="string">'float32'</span>)</span><br><span class="line">    conv1 = fluid.layers.conv2d(input=img, num_filters=<span class="number">20</span>, filter_size=<span class="number">5</span>, stride=<span class="number">2</span>, act=<span class="string">"relu"</span>)</span><br><span class="line">    conv1 = fluid.layers.batch_norm(conv1)</span><br><span class="line">    conv2 = fluid.layers.conv2d(input=conv1, num_filters=<span class="number">50</span>, filter_size=<span class="number">5</span>, stride=<span class="number">2</span>, act=<span class="string">"relu"</span>)</span><br><span class="line">    predict = fluid.layers.fc(input=conv2, size=<span class="number">10</span>, act=<span class="string">"softmax"</span>)</span><br><span class="line">    <span class="keyword">return</span> predict</span><br><span class="line"></span><br><span class="line">predict = LeNet()</span><br><span class="line"></span><br><span class="line">fluid.io.load_params(executor=exe, dirname=param_path,</span><br><span class="line">                    main_program=<span class="literal">None</span>)</span><br><span class="line"><span class="comment"># 为了保证与模型加载使用同样的参数</span></span><br><span class="line">feed_target_names = [<span class="string">'img'</span>]</span><br><span class="line">fetch_targets = [predict]</span><br></pre></td></tr></table></figure>
+
+<h3 id="模型推断"><a href="#模型推断" class="headerlink" title="模型推断"></a>模型推断</h3><p>前面已经通过模型保存，以及后续的模型加载获取到了预训练的模型。接下来是针对测试数据，我们来看这些未被训练过的数据是否能够被模型正确地判断出来。</p>
+<p>首先还是加载数据, 在这里我们只选取mnist测试集中的一个来看看。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">BATCH_SIZE = <span class="number">64</span></span><br><span class="line">BUF_SIZE = <span class="number">256</span></span><br><span class="line"></span><br><span class="line">test_data = paddle.batch(</span><br><span class="line">    paddle.reader.shuffle(mnist.test(), buf_size=BUF_SIZE), </span><br><span class="line">    batch_size=BATCH_SIZE)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> data <span class="keyword">in</span> test_data():</span><br><span class="line">    image, label = data[<span class="number">3</span>]</span><br><span class="line">    <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p>先看看我们的image具体图像，以及label的具体数值：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(label)</span><br><span class="line">plt.imshow(image.reshape(<span class="number">28</span>, <span class="number">28</span>))</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190417204918338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01vcGhpc3RvbGl1,size_16,color_FFFFFF,t_70" alt><br>接下来看看模型预测的结果, 可以看到softmax出来的结果数字6的预测是最高的。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">results = exe.run(inference_program,</span><br><span class="line">              feed=&#123;feed_target_names[<span class="number">0</span>]: image.reshape(<span class="number">-1</span>, <span class="number">1</span>, <span class="number">28</span>, <span class="number">28</span>)&#125;,</span><br><span class="line">              fetch_list=fetch_targets)</span><br><span class="line">print(results)</span><br><span class="line">print(<span class="string">"max position: &#123;&#125;"</span>.format(np.argmax(results)))</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190417204949179.png" alt></p>
 
     </div>
 
@@ -393,7 +409,7 @@
     <strong>本文作者： </strong>Alucard_dh</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/" title="colab下配置并运行PRML源代码">http://yoursite.com/2020/02/12/colab下配置并运行PRML源代码/</a>
+    <a href="http://yoursite.com/2020/04/07/paddlepaddle学习记录/" title="paddlepaddle学习记录">http://yoursite.com/2020/04/07/paddlepaddle学习记录/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -408,9 +424,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Colab/" rel="tag"># Colab</a>
-            
-              <a href="/tags/PRML/" rel="tag"># PRML</a>
+              <a href="/tags/paddlepaddle/" rel="tag"># paddlepaddle</a>
             
           </div>
         
@@ -420,8 +434,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2020/01/31/围棋入门/" rel="next" title="围棋入门">
-                  <i class="fa fa-chevron-left"></i> 围棋入门
+                <a href="/2020/02/12/colab下配置并运行PRML源代码/" rel="next" title="colab下配置并运行PRML源代码">
+                  <i class="fa fa-chevron-left"></i> colab下配置并运行PRML源代码
                 </a>
               
             </div>
@@ -429,10 +443,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2020/04/07/paddlepaddle学习记录/" rel="prev" title="paddlepaddle学习记录">
-                  paddlepaddle学习记录 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -478,6 +488,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#paddle学习记录"><span class="nav-number">1.</span> <span class="nav-text">paddle学习记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型的保存与加载"><span class="nav-number">1.1.</span> <span class="nav-text">模型的保存与加载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整个模型的保存与加载"><span class="nav-number">1.1.1.</span> <span class="nav-text">整个模型的保存与加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数的保存与加载"><span class="nav-number">1.1.2.</span> <span class="nav-text">参数的保存与加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模型推断"><span class="nav-number">1.1.3.</span> <span class="nav-text">模型推断</span></a></li></ol></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
